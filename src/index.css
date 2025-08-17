@@ -30,6 +30,49 @@ select:focus {
   outline: none;
 }
 
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: rgb(182, 119, 255);
+}
+
+form input,
+select,
+textarea {
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.headerLink:focus,
+.headerLink:hover {
+  text-decoration: none;
+  color: rgb(121, 255, 159);
+}
+
 main {
   max-width: 500px;
   margin: auto;
@@ -62,9 +105,44 @@ form {
   flex-direction: column;
 }
 
+.excerpt {
+  font-style: italic;
+}
+
 .postCredit {
   font-size: 1rem;
-  font-style: italic;
+  color: hsla(156, 100%, 86%, 0.75);
+}
+
+.postCredit a,
+.postCredit a:visited {
+  margin-right: 0.5rem;
+  color: rgb(137, 255, 95);
+  text-decoration: none;
+  font-weight: 900;
+  border: #fff dashed;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.postCredit a:hover,
+.postCredit a:focus {
+  color: hsla(189, 100%, 69%, 0.75);
+}
+
+.editCredit a {
+  margin-right: 0.5rem;
+  color: rgb(137, 255, 95);
+  text-decoration: none;
+  font-weight: 900;
+  border: #fff dashed;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.editCredit a:hover,
+.editCredit a:focus {
+  color: rgb(255, 255, 124);
 }
 
 .reactionButton {
@@ -74,4 +152,33 @@ form {
   color: whitesmoke;
   font-size: 1.5rem;
   font-style: normal;
+}
+
+.postTitle {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+.postAuthor,
+.postContent {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.saveButton {
+  background-color: rgb(107, 104, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: rgb(255, 70, 131);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
 }
