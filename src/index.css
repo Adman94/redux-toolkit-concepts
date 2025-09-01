@@ -62,6 +62,10 @@ li {
   padding: 10px;
 }
 
+ul > li {
+  text-decoration: none;
+}
+
 .headerLink {
   text-decoration: none;
   color: #fff;
